@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rejestracja</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body class="body">
+  </head>
+  <body class="body">
     <main>
-        <h1 class="header">Formularz rejestracyjny</h1>
-        <form>
-            <fieldset>
-            <legend class="legend">Imię i nazwisko</legend>
+      <h1 class="header">Formularz rejestracyjny</h1>
+      <form>
+        <fieldset>
+          <legend class="legend">Imię i nazwisko</legend>
           <p>
             <label class="boxName" for="twojeImię"
               >Twoje imię:
               <input
+                required
                 type="text"
                 placeholder="Tu wpisz swoje imię"
                 id="twojeImię"
@@ -27,6 +28,7 @@
             <label class="boxName" for="twojeNazwisko"
               >Twoje nazwisko:
               <input
+                required
                 type="text"
                 placeholder="Tu wpisz swoje nazwisko"
                 id="twojeNazwisko"
@@ -35,54 +37,72 @@
             </label>
           </p>
         </fieldset>
-          <fieldset>
-            <legend>Adress</legend>
+        <fieldset>
+          <legend class="legend">Adres zamieszkania</legend>
+          <p>
+            <label class="boxName" for="ulica"
+              >Ulica:
+              <input
+                required
+                type="text"
+                placeholder="Tu wpisz ulicę"
+                id="ulica"
+                name="ulica"
+              />
+            </label>
+          </p>
+          <p>
+            <label class="boxName" for="kodPocztowy"
+              >Kod pocztowy:
+              <input
+                required
+                type="text"
+                placeholder="Tu wpisz kod pocztowy"
+                id="kodPocztowy"
+                name="kodPocztowy"
+              />
+            </label>
+          </p>
+          <p>
+            <label class="boxName" for="miejscowość"
+              >Miejscowość:
+              <input
+                required
+                type="text"
+                placeholder="Tu wpisz miejscowość"
+                id="miejscowość"
+                name="miejscowość"
+              />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+            <legend class="legend">Kontakt</legend>
             <p>
-              <label for="nazwaFormularza"
-                >Street name:
+              <label class="boxName" for="telefon"
+                >Telefon:
                 <input
                   required
-                  type="text"
-                  value="Jagoda"
-                  placeholder="Please enter your adress"
-                  id="nazwaFormularza"
-                  name="nazwaFomularza"
+                  type="number"
+                  placeholder="Tu wpisz numer telefonu"
+                  id="telefon"
+                  name="telefon"
                 />
               </label>
             </p>
-          </fieldset>
-          <fieldset>
-            <legend>Favourite icecream flavour</legend>
             <p>
-              <label
-                ><input name="icecCream" type="radio" value="chocolate" />
-                Chocolate</label
-              >
-            </p>
-            <p>
-              <label
-                ><input name="icecCream" type="radio" value="strawberry" />
-                Strawberry</label
-              >
-            </p>
-            <p>
-              <label
-                ><input name="icecCream" type="radio" value="carmel" />
-                Carmel</label
-              >
-            </p>
-          </fieldset>
-          <fieldset>
-            <legend>Agreement</legend>
-            <p>
-              <label><input name="lemonade" checked type="checkbox" value="agree" /> Yes</label>
-            </p>
-            <p>
-              <input name="agreement" type="submit" value="send"/>
-            </p>
-          </fieldset>
-        </form>
-      </main>
-    
-</body>
+                <label class="boxName" for="email"
+                  >E-mail:
+                  <input
+                    required
+                    type="email"
+                    placeholder="Tu wpisz adres mailowy"
+                    id="email"
+                    name="email"
+                  />
+                </label>
+              </p>
+      </form>
+    </main>
+  </body>
 </html>
