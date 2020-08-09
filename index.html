@@ -11,6 +11,45 @@
       <h1 class="header">Formularz rejestracyjny</h1>
       <form>
         <fieldset>
+            <legend class="legend">Dane do logowania</legend>
+            <p>
+              <label class="boxName" for="twójLogin"
+                >Login:
+                <input
+                  required
+                  type="text"
+                  placeholder="Tu wpisz swój login"
+                  id="twójLogin"
+                  name="twójLogin"
+                />
+              </label>
+            </p>
+            <p>
+              <label class="boxName" for="twojeHasło"
+                >Twoje hasło:
+                <input
+                  required
+                  type="password"
+                  placeholder="Tu wpisz swoje hasło"
+                  id="twojeHasło"
+                  name="twojeHasło"
+                />
+              </label>
+            </p>
+            <p>
+                <label class="boxName" for="twojeHasło"
+                  >Powtórz hasło:
+                  <input
+                    required
+                    type="password"
+                    placeholder="Tu wpisz swoje hasło"
+                    id="twojeHasło"
+                    name="twojeHasło"
+                  />
+                </label>
+              </p>
+          </fieldset>
+        <fieldset>
           <legend class="legend">Imię i nazwisko</legend>
           <p>
             <label class="boxName" for="twojeImię"
@@ -75,54 +114,57 @@
               />
             </label>
           </p>
-            <p>
-              <label class="boxName" name="województwo" for="województwo"> Województwo</label>
-                <select id="województwo">
-                    <option value="1">Dolnośląskie</option>
-                    <option value="2">Kujawsko-pomorskie</option>
-                    <option value="3">Lubelskie</option>
-                    <option value="4">Lubuskie</option>
-                    <option value="5">Łódzkie</option>
-                    <option value="6">Małopolskie</option>
-                    <option value="7">Mazowieckie</option>
-                    <option value="8">Opolskie</option>
-                    <option value="9">Podkarpackie</option>
-                    <option value="10">Podlaskie</option>
-                    <option value="11">Pomorskie</option>
-                    <option value="12">Śląskie</option>
-                    <option value="13">Świętokrzyskie</option>
-                    <option value="14">Warmińsko-mazurskie</option>
-                    <option value="15">Wielkopolskie</option>
-                    <option value="16">Zachodniopomorskie</option>
-                </select>
-            </p>
+          <p>
+            <label class="boxName" name="województwo" for="województwo">
+              Województwo</label
+            >
+            <select id="województwo">
+              <option value="1">Dolnośląskie</option>
+              <option value="2">Kujawsko-pomorskie</option>
+              <option value="3">Lubelskie</option>
+              <option value="4">Lubuskie</option>
+              <option value="5">Łódzkie</option>
+              <option value="6">Małopolskie</option>
+              <option value="7">Mazowieckie</option>
+              <option value="8">Opolskie</option>
+              <option value="9">Podkarpackie</option>
+              <option value="10">Podlaskie</option>
+              <option value="11">Pomorskie</option>
+              <option value="12">Śląskie</option>
+              <option value="13">Świętokrzyskie</option>
+              <option value="14">Warmińsko-mazurskie</option>
+              <option value="15">Wielkopolskie</option>
+              <option value="16">Zachodniopomorskie</option>
+            </select>
+          </p>
         </fieldset>
         <fieldset>
-            <legend class="legend">Kontakt</legend>
-            <p>
-              <label class="boxName" for="telefon"
-                >Telefon:
-                <input
-                  required
-                  type="tel"
-                  placeholder="Tu wpisz numer telefonu"
-                  id="telefon"
-                  name="telefon"
-                />
-              </label>
-            </p>
-            <p>
-                <label class="boxName" for="email"
-                  >E-mail:
-                  <input
-                    required
-                    type="email"
-                    placeholder="Tu wpisz adres mailowy"
-                    id="email"
-                    name="email"
-                  />
-                </label>
-              </p>
+          <legend class="legend">Kontakt</legend>
+          <p>
+            <label class="boxName" for="telefon"
+              >Telefon:
+              <input
+                required
+                type="tel"
+                placeholder="Tu wpisz numer telefonu"
+                id="telefon"
+                name="telefon"
+              />
+            </label>
+          </p>
+          <p>
+            <label class="boxName" for="email"
+              >E-mail:
+              <input
+                required
+                type="email"
+                placeholder="Tu wpisz adres mailowy"
+                id="email"
+                name="email"
+              />
+            </label>
+          </p>
+        </fieldset>
       </form>
     </main>
   </body>
