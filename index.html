@@ -4,56 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rejestracja</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="normalize.css" rel="stylesheet" type="text/css"/>
   </head>
   <body class="body">
-    <main>
-      <h1 class="header">Formularz rejestracyjny</h1>
-      <form>
-        <fieldset>
-            <legend class="legend">Dane do logowania</legend>
-            <p>
-              <label class="boxName" for="twójLogin"
-                >Login:
-                <input
-                  required
-                  type="text"
-                  placeholder="Tu wpisz swój login"
-                  id="twójLogin"
-                  name="twójLogin"
-                />
-              </label>
-            </p>
-            <p>
-              <label class="boxName" for="twojeHasło"
-                >Twoje hasło:
-                <input
-                  required
-                  type="password"
-                  placeholder="Tu wpisz swoje hasło"
-                  id="twojeHasło"
-                  name="twojeHasło"
-                />
-              </label>
-            </p>
-            <p>
-                <label class="boxName" for="twojeHasło"
-                  >Powtórz hasło:
-                  <input
-                    required
-                    type="password"
-                    placeholder="Tu wpisz swoje hasło"
-                    id="twojeHasło"
-                    name="twojeHasło"
-                  />
-                </label>
-              </p>
-          </fieldset>
-        <fieldset>
-          <legend class="legend">Imię i nazwisko</legend>
+    <main class="main">
+      <h1 class="header">Zarejestruj się</h1>
+      <form class="registrationBody">
+        <fieldset class="boxes">
+          <legend class="legend"><b>Dane do logowania</b></legend>
+          <p>
+            <label class="boxName" for="twójLogin"
+              >Login:
+              <input
+                required
+                type="text"
+                placeholder="Tu wpisz swój login"
+                id="twójLogin"
+                name="twójLogin"
+              />
+            </label>
+          </p>
+          <p>
+            <label class="boxName" for="twojeHaslo"
+              >Hasło:
+              <input
+                required
+                type="password"
+                placeholder="Tu wpisz swoje hasło"
+                id="twojeHaslo"
+                name="twojeHaslo"
+              />
+            </label>
+          </p>
+          <p>
+            <label class="boxName" for="twojeHaslo2"
+              >Powtórz hasło:
+              <input
+                required
+                type="password"
+                placeholder="Tu wpisz swoje hasło"
+                id="twojeHaslo2"
+                name="twojeHaslo2"
+              />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="boxes">
+          <legend class="legend"><b>Imię i nazwisko</b></legend>
           <p>
             <label class="boxName" for="twojeImię"
-              >Twoje imię:
+              >Imię:
               <input
                 required
                 type="text"
@@ -65,7 +66,7 @@
           </p>
           <p>
             <label class="boxName" for="twojeNazwisko"
-              >Twoje nazwisko:
+              >Nazwisko:
               <input
                 required
                 type="text"
@@ -76,8 +77,8 @@
             </label>
           </p>
         </fieldset>
-        <fieldset>
-          <legend class="legend">Adres zamieszkania</legend>
+        <fieldset class="boxes">
+          <legend class="legend"><b>Adres zamieszkania</b></legend>
           <p>
             <label class="boxName" for="ulica"
               >Ulica:
@@ -115,10 +116,9 @@
             </label>
           </p>
           <p>
-            <label class="boxName" name="województwo" for="województwo">
-              Województwo</label
-            >
-            <select id="województwo">
+            <label class="boxName" for="wojewodztwo">
+              Województwo</label>
+            <select id="wojewodztwo" name="wojewodztwo">
               <option value="1">Dolnośląskie</option>
               <option value="2">Kujawsko-pomorskie</option>
               <option value="3">Lubelskie</option>
@@ -138,8 +138,8 @@
             </select>
           </p>
         </fieldset>
-        <fieldset>
-          <legend class="legend">Kontakt</legend>
+        <fieldset class="boxes">
+          <legend class="legend"><b>Kontakt</b></legend>
           <p>
             <label class="boxName" for="telefon"
               >Telefon:
