@@ -60,6 +60,7 @@
 .agreement {
     color: #ffffff;
     text-align: left;
+    min-width: 200px;
     
 }
 
