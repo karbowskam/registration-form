@@ -50,3 +50,33 @@
   font-size: large;
 }
 
+.line {
+    border: 1px solid rgb(232, 241, 101);
+    max-width: 20%;
+    margin: 35px auto 20px;
+
+}
+
+.agreement {
+    color: #ffffff;
+    text-align: left;
+    
+}
+
+.checkBox {
+  background: rgb(232, 241, 101);
+}
+
+.agreement--button { 
+  color: rgba(3, 29, 19, 1) 35%;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.agreement--submit {
+  background: rgb(232, 241, 101);
+  font-weight: bolder;
+  padding: 5px 20px;
+  border-radius: 10px ;
+}

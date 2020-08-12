@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rejestracja</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="body">
     <main class="main">
@@ -116,9 +116,9 @@
             </label>
           </p>
           <p>
-            <label class="boxName" for="wojewodztwo">
-              Województwo</label>
+            <label class="boxName" for="wojewodztwo"> Województwo</label>
             <select id="wojewodztwo" name="wojewodztwo">
+              <option value="0">-</option>
               <option value="1">Dolnośląskie</option>
               <option value="2">Kujawsko-pomorskie</option>
               <option value="3">Lubelskie</option>
@@ -163,6 +163,40 @@
                 name="email"
               />
             </label>
+          </p>
+        </fieldset>
+        <hr class="line" />
+        <fieldset class="boxes">
+          <legend class="legend"><b>Zgody na przetwarzanie danych</b></legend>
+          <p class="agreement">
+            <label class="boxName">
+              <input class="checkBox" type="checkbox" value="agree" /> 
+              Wyrażam zgodę na przetwarzanie moich danych osobowych przez
+              Administratora danych osobowych, którym jest Firma XYZ z siedzibą
+              we Wrocławiu, ul. Wrocławska 5/18, NIP: 777-88-22-444, REGON:
+              1122334455.
+            </label>
+          </p>
+          <p class="agreement">
+            <label class="boxName">
+              <input class="checkBox"name="checkBox" type="checkbox" value="agree" />
+               Podaję dane osobowe dobrowolnie i oświadczam, że są one zgodne
+              z prawdą.</label
+            >
+          </p>
+
+          <p class="agreement">
+            <label class="boxName"
+              ><input class="checkBox" name="checkBox" type="checkbox" value="agree" />
+               Zapoznałem/łam się z treścią klauzuli informacyjnej, w tym z
+              informacją o celu i sposobach przetwarzania danych osobowych oraz
+              prawie dostępu do treści swoich danych i prawie ich
+              poprawiania.</label
+            >
+
+          </p>
+          <p class="agreement--button">
+            <input class="agreement--submit" name="agreement" type="submit" value="Wyślij"/>
           </p>
         </fieldset>
       </form>
