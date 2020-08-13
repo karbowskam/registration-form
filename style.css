@@ -99,3 +99,7 @@
 .login--js {
   color:  rgb(232, 241, 101);
 }
+
+.passwordRememberLink { 
+  color:rgb(232, 241, 101);
+}
