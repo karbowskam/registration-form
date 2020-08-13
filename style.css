@@ -67,6 +67,7 @@
 .checkBox {
   background: rgb(232, 241, 101);
   max-width: 30%;
+  cursor: pointer;
 }
 
 .agreement__button { 
@@ -80,7 +81,8 @@
   background: rgb(232, 241, 101);
   font-weight: bolder;
   padding: 5px 20px;
-  border-radius: 10px ;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .passwordRemember {
