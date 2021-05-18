@@ -103,3 +103,21 @@
 .passwordRememberLink { 
   color:rgb(232, 241, 101);
 }
+
+
+.input {
+  background-color: #ffffff;
+  transition: background-color 2s .5 ease-in;
+  
+
+}
+
+.input:hover {
+  background-color: #dbeb81;
+  cursor: pointer;
+} 
+
+.input:focus {
+  background-color: #dbeb81;
+
+}
